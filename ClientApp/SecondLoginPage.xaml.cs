@@ -13,19 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-
 namespace ClientApp
 {
     /// <summary>
-    /// Логика взаимодействия для LoginPage.xaml
+    /// Логика взаимодействия для SecondLoginPage.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class SecondLoginPage : Page
     {
-        public LoginPage()
+        public SecondLoginPage()
         {
             InitializeComponent();
         }
-
-
     }
 }

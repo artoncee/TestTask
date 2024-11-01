@@ -7,8 +7,28 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="LoginPage">
+    
+    
 
-    <Grid Background="AntiqueWhite">
+    <Grid Background="AliceBlue">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Логин" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="1"/>
+        <Label Content="Пароль" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="1"/>
+        <TextBlock/>
+        <TextBox x:Name="Username" Height="20" Width="200" Background="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="2"/>
+        <TextBox x:Name="Password" Height="20" Width="200" Background="White" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="2"/>
+        <Button x:Name="logButton" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Войти" Style="{StaticResource RoundedButtonStyle}" />
+
 
     </Grid>
 </Page>

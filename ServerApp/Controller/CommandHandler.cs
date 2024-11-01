@@ -64,7 +64,7 @@ namespace ServerApp
             {
                 foreach (User user in org.Users)
                 {
-                    if (user.Username == username)
+                    if (user.Username == username && user.Password == password)
                     {
                         userExist = true;
                         break;

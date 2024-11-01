@@ -6,25 +6,6 @@
         xmlns:local="clr-namespace:ClientApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <Style x:Key="RoundedButtonStyle" TargetType="Button">
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border BorderBrush="Blue" 
-                                Background="White" 
-                                BorderThickness="1" 
-                                CornerRadius="10"
-                                MinWidth="150"
-                                MinHeight="25">
-                            <ContentPresenter HorizontalAlignment="Center" 
-                                              VerticalAlignment="Center" />
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
 
     <Grid Background="Lavender">
         <Grid.RowDefinitions>
@@ -33,13 +14,12 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button x:Name="LoginButton" Margin="5,5,5,10" Content="Вход" Style="{StaticResource RoundedButtonStyle}" Click="Button_Click_Login"/>
+            <Button x:Name="LoginButton" Margin="5,5,5,10" Content="Вход 1" Style="{StaticResource RoundedButtonStyle}" Click="Button_Click_Login"/>
+            <Button x:Name="LoginButtonSecond" Margin="5,5,5,10" Content="Вход 2" Style="{StaticResource RoundedButtonStyle}" Click="Button_Click_Login_Second"/>
             <Button x:Name="RegistrationButton" Margin="5,5,5,10" Content="Регистрация" Style="{StaticResource RoundedButtonStyle}" Click="Button_Click_Registration"/>
         </StackPanel>
 
-        <Frame x:Name="Frame" Grid.Row="1" Background="AliceBlue">
-
-        </Frame>
+        <Frame x:Name="MainFrame" Grid.Row="1" Background="AliceBlue" />
     </Grid>
 
 </Window>

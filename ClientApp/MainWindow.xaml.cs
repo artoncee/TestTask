@@ -23,16 +23,22 @@ namespace ClientApp
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new LoginPage());
         }
 
         private void Button_Click_Login(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new LoginPage();
+            MainFrame.Content = new LoginPage();
         }
 
         private void Button_Click_Registration(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new RegistrationPage();
+            MainFrame.Content = new RegistrationPage();
+        }
+
+        private void Button_Click_Login_Second(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Content = new SecondLoginPage();
         }
     }
 }
